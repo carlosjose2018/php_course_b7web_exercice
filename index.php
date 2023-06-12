@@ -4,14 +4,27 @@
 <div class="container-fluid height bg-primary-subtle">
 
 <div class="container-sm pt-4 ">
-
-<form>
+<img src="https://img.freepik.com/vetores-gratis/mulher-verificar-gigante-lista-de-verificacao-fundo_23-2148090965.jpg?w=740&t=st=1686597211~exp=1686597811~hmac=6514d5ec15b3999bb723b12ea8c09514662657cee71ff4fb77879781e39334ea" class="img-thumbnail img-container" alt="imagem contador">
+<form method="POST" action="request.php">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Nome</label>
+    <label for="exampleInputEmail1" class="form-label">Nome:</label>
     <input type="text" class="form-control" id="exampleInputEmail1">
     <div id="emailHelp" class="form-text">Entre com nome valido.</div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <div class="mb-3 d-flex">
+
+    <div class="w-25">
+     <label for="exampleInputEmail1" class="form-label">Idade:</label>
+     <input type="number" class="form-control" id="exampleInputEmail1">
+     <div id="emailHelp" class="form-text">Entre com uma idade valida.</div>
+    </div>
+    <div class="w-25 ms-4">
+     <label for="exampleInputEmail1" class="form-label">Sexo:</label>
+     <input type="text" class="form-control" id="exampleInputEmail1">
+     <div id="emailHelp" class="form-text">Sexo.</div>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 
 <table class="table mt-4">
