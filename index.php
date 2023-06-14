@@ -57,17 +57,19 @@
 
 <table class="table mt-4">
    <thead>
-     <tr>
-       <th scope="col">#</th>
-       <th scope="col">NOME</th>
-       <th scope="col">IDADE</th>
-       <th scope="col">PROFISSÃO</th>
+     <tr class="row align-items-end">
+       <th class="col">NOME</th>
+       <th class="col">IDADE</th>
+       <th class="col">PROFISSÃO</th>
+       <th class="col">Email</th>
      </tr>
    </thead>
    <tbody>
+
 <?php 
  echo  file_get_contents('table.txt');
 ?>
+
    </tbody>
  </table>
  </div>
