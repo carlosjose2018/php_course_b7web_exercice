@@ -2,19 +2,40 @@
 
 session_start();
 
-$search_name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
-$search_age = filter_input(INPUT_POST, 'age',FILTER_SANITIZE_NUMBER_INT);
-$search_profission = filter_input(INPUT_POST, 'profession',FILTER_SANITIZE_SPECIAL_CHARS);
-$search_email = filter_input(INPUT_POST, 'email',   FILTER_VALIDATE_EMAIL);
-$search_textarea = filter_input(INPUT_POST,'textarea');
+$array_inputs = [
+    'name' => filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS),
+    'age' => filter_input(INPUT_POST, 'age', FILTER_SANITIZE_NUMBER_INT),
+    'profession' => filter_input(INPUT_POST, 'profession', FILTER_SANITIZE_SPECIAL_CHARS),
+    'email' => filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL),
+    'textarea' => filter_input(INPUT_POST, 'textarea')
+];
 
 
-if($search_name && $search_age && $search_email){
-   echo "You have searched for $search_name.</br>"; 
-   echo "You have searched for $search_age.</br>";
-   echo "You have searched for $search_profission.</br>";
-   echo "You have searched for $search_email.</br>";
-   echo "$search_textarea.</br>";
+
+if($array_inputs['name']){
+
+  $table_output = file_get_contents('table.txt');
+
+  $table_output .= '
+ 
+     <tr>
+       <th scope="row">1</th>
+       <td>'. $array_inputs['name'] .'</td>
+     </tr>
+     <tr>
+       <th scope="row">2</th>
+       <td>'. $array_inputs['age'] .'</td>
+     </tr>
+     <tr>
+       <th scope="row">3</th>
+       <td colspan="2">'. $array_inputs['profession'] .'</td>
+     </tr>
+';
+
+ file_put_contents('table.txt',$table_output);
+
+ header("Location:index.php");
+
 }else{
   
     $_SESSION['alert'] = '<div class="alert alert-danger mt-4" role="alert">
@@ -28,3 +49,4 @@ if($search_name && $search_age && $search_email){
 
 
 
+//Implemeteion function anonyma
