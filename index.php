@@ -55,23 +55,23 @@
   </div>
 </form>
 
-<table class="table mt-4">
-   <thead>
-     <tr class="row align-items-end">
-       <th class="col">NOME</th>
-       <th class="col">IDADE</th>
-       <th class="col">PROFISSÃO</th>
-       <th class="col">Email</th>
-     </tr>
-   </thead>
-   <tbody>
+<div class="container bg-light mt-4">
+   <div class="container">
+     <div class="row pt-4 pb-4 border-bottom ">
+       <div class="col-4">NOME</div>
+       <div class="col-1">IDADE</div>
+       <div class="col-3">PROFISSÃO</div>
+       <div class="col-4">Email</div>
+    </div>
+    </div>
+   <div>
 
 <?php 
  echo  file_get_contents('table.txt');
 ?>
-
-   </tbody>
- </table>
+ 
+  </div>
+</div>
  </div>
 </div>
 

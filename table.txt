@@ -1,0 +1,42 @@
+
+ 
+     <div class="row pt-2 pb-2 border-bottom">
+       <div class="col-4">test1 addadadasddddddddddddddddddddddddddddddddddd</div>
+       <div class="col-1">21</div>
+       <div class="col-3">adtasdasd</div>
+       <div class="col-4">daaaaaaaaagggggggggggggg@gmail.com</div>
+     </div>
+
+     <div class="d-flex flex-column container-fluid border-bottom">
+       <div class="d-flex justify-content-center">Descrição:</div>
+       <div>dqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq asd                dadaad</div>
+     </div>
+
+
+ 
+     <div class="row pt-2 pb-2 border-bottom">
+       <div class="col-4">test2</div>
+       <div class="col-1">32</div>
+       <div class="col-3">programador</div>
+       <div class="col-4">dadasdasdassadsdfadsfaf@gmail.com</div>
+     </div>
+
+     <div class="d-flex flex-column container-fluid border-bottom pt-2 pb-2 border-bottom">
+       <div class="d-flex justify-content-center">Descrição:</div>
+       <div>daaaaaaaaaaaaaaaaaaas adaasa assssssssssssssssssssssssada sfdadfsad</div>
+     </div>
+
+
+ 
+     <div class="row pt-2 pb-2 border-bottom bg-Secondary">
+       <div class="col-4">tes4 adadad adaada</div>
+       <div class="col-1">50</div>
+       <div class="col-3">qa de test</div>
+       <div class="col-4">dqwdajdsadja@gmail.com</div>
+     </div>
+
+     <div class="d-flex flex-column container-fluid border-bottom pt-2 pb-2 border-bottom">
+       <div class="d-flex justify-content-center">Descrição:</div>
+       <div>dassssssssssssssssssssss adddddddddddddddddddddddddddddddddddd adsssssssssssssssssssad adsssssssssssssssss</div>
+     </div>
+

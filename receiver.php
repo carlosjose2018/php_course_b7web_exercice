@@ -18,17 +18,18 @@ if($array_inputs['name']){
 
   $table_output .= '
  
-     <tr>
-       <td>'. $array_inputs['name'] .'</td>
-       <td>'. $array_inputs['age'] .'</td>
-       <td colspan="2">'. $array_inputs['profession'] .'</td>
-       <td colspan="2">'. $array_inputs['email'] .'</td>
-     </tr>
-     <tr class="d-flex flex-column">
-       <th scope="row"class="d-flex justify-content-center">Descrição:</th>
-       <td>'. $array_inputs['textarea'] .'</td>
-     </tr>
-     
+     <div class="row pt-2 pb-2 border-bottom bg-secondary">
+       <div class="col-4">'. $array_inputs['name'] .'</div>
+       <div class="col-1">'. $array_inputs['age'] .'</div>
+       <div class="col-3">'. $array_inputs['profession'] .'</div>
+       <div class="col-4">'. $array_inputs['email'] .'</div>
+     </div>
+
+     <div class="d-flex flex-column container-fluid border-bottom pt-2 pb-2 border-bottom">
+       <div class="d-flex justify-content-center">Descrição:</div>
+       <div>'. $array_inputs['textarea'] .'</div>
+     </div>
+
 ';
 
  file_put_contents('table.txt',$table_output);
